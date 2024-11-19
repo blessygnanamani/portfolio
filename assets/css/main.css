@@ -736,8 +736,13 @@ section,
 }
 
 .hero .container {
-  position: relative;
-  z-index: 3;
+  position: relative; /* Keeps the positioning intact for children */
+  z-index: 3; /* Ensures proper stacking */
+  width: 100%; /* Makes it span the entire page width */
+  max-width: 100%; /* Removes any maximum constraint */
+  padding: 0; /* Removes unnecessary spacing if added by default */
+  margin: 0 auto; /* Centers the container horizontally if needed */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 .hero h2 {
