@@ -738,11 +738,11 @@ section,
 .hero .container {
   position: relative; /* Keeps the positioning intact for children */
   z-index: 3; /* Ensures proper stacking */
-  /*width: 100%; /* Makes it span the entire page width */
-  /*max-width: 100%; /* Removes any maximum constraint */
-  /*padding: 0; /* Removes unnecessary spacing if added by default */
-  /*margin: 0 auto; /* Centers the container horizontally if needed */
-  /*box-sizing: border-box; /* Ensures padding doesn’t affect width */
+  width: 100%; /* Makes it span the entire page width */
+  max-width: 100%; /* Removes any maximum constraint */
+  padding: 0; /* Removes unnecessary spacing if added by default */
+  margin: 0 auto; /* Centers the container horizontally if needed */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 .hero h2 {
@@ -840,7 +840,6 @@ section,
   position: relative;
 }
 
-/* Item Header Styles */
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -858,7 +857,6 @@ section,
   margin-bottom: 10px;
 }
 
-/* List and Item Styles */
 .resume .resume-item ul {
   padding-left: 20px;
 }
@@ -881,42 +879,6 @@ section,
   top: 0;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
-}
-
-/* Two-column Layout */
-.resume .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.resume .col-lg-6 {
-  flex: 0 0 calc(50% - 10px); /* Two equal columns with spacing */
-  max-width: calc(50% - 10px);
-}
-
-@media (max-width: 768px) {
-  .resume .col-lg-6 {
-    flex: 0 0 100%; /* Full-width columns on smaller screens */
-    max-width: 100%;
-  }
-}
-
-/* Adjust Padding for Column Content */
-.resume .resume-item {
-  padding-left: 15px; /* Reduced padding to fit columns */
-  margin-top: 0;
-}
-
-/* Section Title Alignment */
-.resume .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.resume .section-title h2 {
-  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
