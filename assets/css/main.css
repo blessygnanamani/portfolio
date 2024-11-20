@@ -1404,6 +1404,8 @@ section,
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
