@@ -864,6 +864,11 @@ section,
 
 /*--------------------------------------------------------------
 /* Resume Section */
+#resume {
+    width: 100%;
+    padding: 40px 0;
+}
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
